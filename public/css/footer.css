@@ -1,0 +1,39 @@
+.home-body {
+}
+
+.footer-home {
+}
+
+.footer-home section {
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-home section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+.footer-home section h3 {
+    color: var(--grisOscuro);
+    margin: 0px;
+}
+
+.footer-home section p {
+    color: var(--grisOscuro);
+    font-size: var(--descripciones);
+    margin: 0px;
+}
+
+/* ------ SECCIÓN COPYRIGHT --------- */
+
+.footer-home section.copyright {
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.footer-home section.copyright h3 {
+    font-size: var(--cuerpoTexto);
+    margin-top: 40px;
+}

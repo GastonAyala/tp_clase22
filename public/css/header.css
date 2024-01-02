@@ -1,0 +1,71 @@
+/* ------------- HEADER HOME --------------- */
+.home-body {
+}
+
+.header-home {
+    background-color: var(--amarillo);
+}
+
+.header-home img.logo {
+    width: 134px;
+    margin: 34px;
+}
+.header-home div {
+}
+
+.header-home div input {
+    width: 180px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.header-home button {
+}
+
+.header-home button i {
+}
+
+.header-home p.cuerpo-texto {
+    text-align: center;
+    font-size: var(--cuerpoTexto);
+}
+
+.header-home nav {
+    margin-bottom: 10px;
+    font-size: var(--cuerpoTexto);
+}
+
+.header-home ul.list-nav-principal, ul.list-nav-login {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-home .list-nav-principal {
+}
+
+.header-home .list-nav-principal li {
+}
+
+.header-home .list-nav-principal li a {
+}
+
+.header-home .list-nav-login {
+}
+
+.header-home .list-nav-login li {
+}
+
+.header-home .list-nav-login li a {
+}
+
+.header-home div.burger-menu {
+    text-align: center;
+}
+
+.header-home div.burger-menu i {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--celeste);
+}

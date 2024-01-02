@@ -1,0 +1,88 @@
+.main-home {
+  background-color: var(--grisClaro);
+}
+
+.main-home img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
+
+.main-home section.ultima-visita {
+}
+
+.main-home section.ultima-visita h2 {
+  text-align: center;
+  font-size: var(--titulares);
+  color: var(--grisOscuro);
+}
+
+.main-home section.ultima-visita article {
+}
+
+.main-home section.ultima-visita article img {
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-home section.ultima-visita article .precio {
+  max-width: 1200px;
+  font-size: var(--precios);
+}
+
+.main-home section.ultima-visita article .descuentos {
+  max-width: 1200px;
+  font-size: var(--descuentos);
+}
+
+.main-home section.ultima-visita article h4 {
+}
+
+/* ------ SECCIÓN OFERTAS --------- */
+
+.main-home section.ofertas {
+}
+
+.main-home section.ofertas h2 {
+  text-align: center;
+  font-size: var(--titulares);
+  color: var(--grisOscuro);
+}
+
+.main-home section.ofertas article {
+}
+
+.main-home section.ofertas article img {
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-home section.ofertas article p.precio {
+  max-width: 1200px;
+  font-size: var(--precios);
+}
+
+.main-home section.ofertas article p.descuentos {
+  max-width: 1200px;
+  font-size: var(--descuentos);
+}
+
+.main-home section.ofertas article h4 {
+}
+
+/* ------ MEDIA QUERIES --------- */
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-home section.ultima-visita article img, .main-home section.ofertas article img {
+    width: 50vw;
+    height: 50vw;
+  }
+  
+}
