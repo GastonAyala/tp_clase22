@@ -1,5 +1,6 @@
-.home-body {
-}
+/* ------------- FOOTER HOME --------------- */
+/* ------ MOBILE-VIEW --------- */
+.home-body {}
 
 .footer-home {
 }
@@ -36,4 +37,49 @@
 .footer-home section.copyright h3 {
     font-size: var(--cuerpoTexto);
     margin-top: 40px;
+}
+
+/* ------ TABLET-VIEW --------- */
+@media (min-width: 361px) {
+    .home-body {}
+
+    .footer-home {}
+    
+    .footer-home section {}
+    
+    .footer-home section i {}
+    
+    .footer-home section h3 {}
+    
+    .footer-home section p {}
+    
+    /* ------ SECCIÓN COPYRIGHT --------- */
+    
+    .footer-home section.copyright {}
+    
+    .footer-home section.copyright h3 {}
+}
+
+
+/* ------ DESKTOP-VIEW --------- */
+
+@media (min-width: 769px) {
+    .home-body {}
+
+    .footer-home {}
+    
+    .footer-home section {}
+    
+    .footer-home section i {}
+    
+    .footer-home section h3 {}
+    
+    .footer-home section p {}
+    
+    /* ------ SECCIÓN COPYRIGHT --------- */
+    
+    .footer-home section.copyright {}
+    
+    .footer-home section.copyright h3 {}
+
 }

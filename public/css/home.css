@@ -1,8 +1,11 @@
+/* ------ MOBILE-VIEW --------- */
+
 .main-home {
   background-color: var(--grisClaro);
+  padding-bottom: 20px;
 }
 
-.main-home img {
+.main-home img.banner {
   width: 100%;
   display: block;
   margin-left: auto;
@@ -12,6 +15,10 @@
 /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
 
 .main-home section.ultima-visita {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-home section.ultima-visita h2 {
@@ -20,32 +27,71 @@
   color: var(--grisOscuro);
 }
 
-.main-home section.ultima-visita article {
+.main-home section.ultima-visita article.product {
+  background-color: var(--blanco);
+  margin: 15px 0;
 }
 
-.main-home section.ultima-visita article img {
-  width: 30vw;
+.main-home section.ultima-visita article.product img {
+  width: 70vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main-home section.ultima-visita article .precio {
+.main-home section.ultima-visita article.product div.description {
+  border: 1px solid var(--grisClaro);
+}
+
+.main-home section.ultima-visita .product .description div.ship {
+  position: relative;
+  text-align: left;
+  margin: 15px 15px 0;
+}
+
+.main-home section.ultima-visita .product .description div.ship i.fa-circle {
+  font-size: 40px;
+  color: var(--verde);
+}
+
+.main-home section.ultima-visita .product .description div.ship i.fa-truck {
+  position: absolute;
+  right: 0;
+  left: 11px;
+  top: 11px;
+  bottom: 0;
+  color: var(--verde);
+}
+
+.main-home section.ultima-visita .product .description .precio {
   max-width: 1200px;
   font-size: var(--precios);
+  text-align: left;
+  margin: 0 15px;
 }
 
-.main-home section.ultima-visita article .descuentos {
+.main-home section.ultima-visita .product .description .descuentos {
+  color: var(--verde);
   max-width: 1200px;
   font-size: var(--descuentos);
+  text-align: left;
+  margin: 0 15px 15px;
 }
 
-.main-home section.ultima-visita article h4 {
+.main-home section.ultima-visita .product .description h4 {
+  color: var(--grisOscuro);
+  text-align: left;
+  margin: 0 15px 15px;
+  display: none;
 }
 
 /* ------ SECCIÓN OFERTAS --------- */
 
 .main-home section.ofertas {
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-home section.ofertas h2 {
@@ -54,35 +100,185 @@
   color: var(--grisOscuro);
 }
 
-.main-home section.ofertas article {
+.main-home section.ofertas article.product {
+  background-color: var(--blanco);
+  margin: 15px 0;
 }
 
-.main-home section.ofertas article img {
-  width: 30vw;
+.main-home section.ofertas .product img {
+  width: 70vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main-home section.ofertas article p.precio {
+.main-home section.ofertas .product .description {
+  border: 1px solid var(--grisClaro);
+}
+
+.main-home section.ofertas .product .description .ship {
+  position: relative;
+  text-align: left;
+  margin: 15px 15px 0;
+}
+
+.main-home section.ofertas .product .description .ship i.fa-circle {
+  font-size: 40px;
+  color: var(--verde);
+}
+
+.main-home section.ofertas .product .description .ship i.fa-truck {
+  position: absolute;
+  right: 0;
+  left: 11px;
+  top: 11px;
+  bottom: 0;
+  color: var(--verde);
+}
+
+.main-home section.ofertas .product div.description .precio {
   max-width: 1200px;
   font-size: var(--precios);
+  text-align: left;
+  margin: 0 15px;
 }
 
-.main-home section.ofertas article p.descuentos {
+.main-home section.ofertas .product .description .descuentos {
   max-width: 1200px;
   font-size: var(--descuentos);
+  color: var(--verde);
+  text-align: left;
+  margin: 0 15px 15px;
 }
 
-.main-home section.ofertas article h4 {
+.main-home section.ofertas .product .description h4 {
+  color: var(--grisOscuro);
+  text-align: left;
+  margin: 0 15px 15px;
+  display: none;
 }
 
 /* ------ MEDIA QUERIES --------- */
 
-@media (min-device-width: 320px) and (max-device-width: 480px) {
-  .main-home section.ultima-visita article img, .main-home section.ofertas article img {
-    width: 50vw;
-    height: 50vw;
+
+/* ------ TABLET-VIEW --------- */
+
+@media (min-width: 361px) {
+  .main-home {}
+  
+  .main-home img.banner {}
+  
+  /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
+  
+  .main-home section.ultima-visita {}
+  
+  .main-home section.ultima-visita h2 {}
+  
+  .main-home section.ultima-visita article.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   
+  .main-home section.ultima-visita article.product img {}
+  
+  .main-home section.ultima-visita article.product div.description {}
+  
+  .main-home section.ultima-visita .product .description div.ship {}
+  
+  .main-home section.ultima-visita .product .description div.ship i.fa-circle {}
+  
+  .main-home section.ultima-visita .product .description div.ship i.fa-truck {}
+  
+  .main-home section.ultima-visita .product .description .precio {}
+  
+  .main-home section.ultima-visita .product .description .descuentos {}
+  
+  .main-home section.ultima-visita .product .description h4 {
+    display: block;
+  }
+  
+  /* ------ SECCIÓN OFERTAS --------- */
+  
+  .main-home section.ofertas {}
+  
+  .main-home section.ofertas h2 {}
+  
+  .main-home section.ofertas article.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  
+  .main-home section.ofertas .product img {}
+  
+  .main-home section.ofertas .product .description {}
+  
+  .main-home section.ofertas .product .description .ship {}
+  
+  .main-home section.ofertas .product .description .ship i.fa-circle {}
+  
+  .main-home section.ofertas .product .description .ship i.fa-truck {}
+  
+  .main-home section.ofertas .product div.description .precio {}
+  
+  .main-home section.ofertas .product .description .descuentos {}
+  
+  .main-home section.ofertas .product .description h4 {
+    display: block;
+  }
+
+}
+
+/* ------ DESKTOP-VIEW --------- */
+
+@media (min-width: 769px) {
+  .main-home {}
+  
+  .main-home img.banner {}
+  
+  /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
+  
+  .main-home section.ultima-visita {}
+  
+  .main-home section.ultima-visita h2 {}
+  
+  .main-home section.ultima-visita article.product {}
+  
+  .main-home section.ultima-visita article.product img {}
+  
+  .main-home section.ultima-visita article.product div.description {}
+  
+  .main-home section.ultima-visita .product .description div.ship {}
+  
+  .main-home section.ultima-visita .product .description div.ship i.fa-circle {}
+  
+  .main-home section.ultima-visita .product .description div.ship i.fa-truck {}
+  
+  .main-home section.ultima-visita .product .description .precio {}
+  
+  .main-home section.ultima-visita .product .description .descuentos {}
+  
+  .main-home section.ultima-visita .product .description h4 {}
+  
+  /* ------ SECCIÓN OFERTAS --------- */
+  
+  .main-home section.ofertas {}
+  
+  .main-home section.ofertas h2 {}
+  
+  .main-home section.ofertas article.product {}
+  
+  .main-home section.ofertas .product img {}
+  
+  .main-home section.ofertas .product .description {}
+  
+  .main-home section.ofertas .product .description .ship {}
+  
+  .main-home section.ofertas .product .description .ship i.fa-circle {}
+  
+  .main-home section.ofertas .product .description .ship i.fa-truck {}
+  
+  .main-home section.ofertas .product div.description .precio {}
+  
+  .main-home section.ofertas .product .description .descuentos {}
+  
+  .main-home section.ofertas .product .description h4 {}
+
 }
