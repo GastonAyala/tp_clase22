@@ -3,6 +3,8 @@
 .main-home {
   background-color: var(--grisClaro);
   padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-home img.banner {
@@ -15,7 +17,6 @@
 /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
 
 .main-home section.ultima-visita {
-  text-align: center;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -30,66 +31,62 @@
 .main-home section.ultima-visita article.product {
   background-color: var(--blanco);
   margin: 15px 0;
+  width: 100%;
 }
 
 .main-home section.ultima-visita article.product img {
-  width: 70vw;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main-home section.ultima-visita article.product div.description {
-  border: 1px solid var(--grisClaro);
-}
-
-.main-home section.ultima-visita .product .description div.ship {
+  border-top: 1px solid var(--grisClaro);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 15px;
   position: relative;
-  text-align: left;
-  margin: 15px 15px 0;
+  align-items: center;
 }
 
-.main-home section.ultima-visita .product .description div.ship i.fa-circle {
-  font-size: 40px;
+.main-home section.ultima-visita .product .description i {
   color: var(--verde);
-}
-
-.main-home section.ultima-visita .product .description div.ship i.fa-truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--verde);
+  background-color: var(--blanco);
+  border-radius: 50%;
   position: absolute;
-  right: 0;
-  left: 11px;
-  top: 11px;
-  bottom: 0;
-  color: var(--verde);
+  left: 73vw;
+  top: -17px;
 }
 
 .main-home section.ultima-visita .product .description .precio {
-  max-width: 1200px;
   font-size: var(--precios);
-  text-align: left;
-  margin: 0 15px;
+  width: 30%;
 }
 
 .main-home section.ultima-visita .product .description .descuentos {
   color: var(--verde);
-  max-width: 1200px;
   font-size: var(--descuentos);
-  text-align: left;
-  margin: 0 15px 15px;
+  width: 70%;
+  text-wrap: nowrap;
 }
 
 .main-home section.ultima-visita .product .description h4 {
   color: var(--grisOscuro);
-  text-align: left;
-  margin: 0 15px 15px;
   display: none;
+  margin-top: 15px;
 }
 
 /* ------ SECCIÓN OFERTAS --------- */
 
 .main-home section.ofertas {
-  text-align: center;
-  max-width: 90%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -103,59 +100,56 @@
 .main-home section.ofertas article.product {
   background-color: var(--blanco);
   margin: 15px 0;
+  width: 100%;
 }
 
 .main-home section.ofertas .product img {
-  width: 70vw;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main-home section.ofertas .product .description {
-  border: 1px solid var(--grisClaro);
-}
-
-.main-home section.ofertas .product .description .ship {
+  border-top: 1px solid var(--grisClaro);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 15px;
   position: relative;
-  text-align: left;
-  margin: 15px 15px 0;
 }
 
-.main-home section.ofertas .product .description .ship i.fa-circle {
-  font-size: 40px;
+.main-home section.ofertas .product .description i {
   color: var(--verde);
-}
-
-.main-home section.ofertas .product .description .ship i.fa-truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--verde);
+  background-color: var(--blanco);
+  border-radius: 50%;
   position: absolute;
-  right: 0;
-  left: 11px;
-  top: 11px;
-  bottom: 0;
-  color: var(--verde);
+  left: 71vw;
+  top: -17px;
 }
 
 .main-home section.ofertas .product div.description .precio {
-  max-width: 1200px;
   font-size: var(--precios);
-  text-align: left;
-  margin: 0 15px;
+  width: 30%;
 }
 
 .main-home section.ofertas .product .description .descuentos {
-  max-width: 1200px;
   font-size: var(--descuentos);
   color: var(--verde);
-  text-align: left;
-  margin: 0 15px 15px;
+  width: 70%;
+  text-wrap: nowrap;
 }
 
 .main-home section.ofertas .product .description h4 {
   color: var(--grisOscuro);
-  text-align: left;
-  margin: 0 15px 15px;
   display: none;
+  margin-top: 15px;
 }
 
 /* ------ MEDIA QUERIES --------- */
@@ -170,27 +164,39 @@
   
   /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
   
-  .main-home section.ultima-visita {}
-  
-  .main-home section.ultima-visita h2 {}
-  
-  .main-home section.ultima-visita article.product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .main-home section.ultima-visita {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    justify-content: center;
+    gap: 10px 17px;
   }
   
-  .main-home section.ultima-visita article.product img {}
+  .main-home section.ultima-visita h2 {
+    text-align: start;
+    width: 92%;
+  }
+  .main-home section.ultima-visita article.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 43.6%;
+    margin: 6px 6px;
+  }
+  
+  .main-home section.ultima-visita article.product img {
+}
   
   .main-home section.ultima-visita article.product div.description {}
   
-  .main-home section.ultima-visita .product .description div.ship {}
   
-  .main-home section.ultima-visita .product .description div.ship i.fa-circle {}
-  
-  .main-home section.ultima-visita .product .description div.ship i.fa-truck {}
+  .main-home section.ultima-visita .product .description i {
+    left: 30vw;
+  }
   
   .main-home section.ultima-visita .product .description .precio {}
   
-  .main-home section.ultima-visita .product .description .descuentos {}
+  .main-home section.ultima-visita .product .description .descuentos {
+    padding-left: 30px;
+  }
   
   .main-home section.ultima-visita .product .description h4 {
     display: block;
@@ -198,27 +204,38 @@
   
   /* ------ SECCIÓN OFERTAS --------- */
   
-  .main-home section.ofertas {}
+  .main-home section.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px auto;
+    gap: 10px 17px;
+  }
   
-  .main-home section.ofertas h2 {}
+  .main-home section.ofertas h2 {
+    text-align: start;
+    width: 92%;
+  }
   
   .main-home section.ofertas article.product {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 43.6%;
+    margin: 6px 6px;
   }
   
   .main-home section.ofertas .product img {}
   
   .main-home section.ofertas .product .description {}
   
-  .main-home section.ofertas .product .description .ship {}
-  
-  .main-home section.ofertas .product .description .ship i.fa-circle {}
-  
-  .main-home section.ofertas .product .description .ship i.fa-truck {}
+  .main-home section.ofertas .product .description i {
+    left: 30vw;
+  }
   
   .main-home section.ofertas .product div.description .precio {}
   
-  .main-home section.ofertas .product .description .descuentos {}
+  .main-home section.ofertas .product .description .descuentos {
+    padding-left: 31px;
+  }
   
   .main-home section.ofertas .product .description h4 {
     display: block;
@@ -239,21 +256,23 @@
   
   .main-home section.ultima-visita h2 {}
   
-  .main-home section.ultima-visita article.product {}
+  .main-home section.ultima-visita article.product {
+    width: 21.4%;
+  }
   
   .main-home section.ultima-visita article.product img {}
   
   .main-home section.ultima-visita article.product div.description {}
   
-  .main-home section.ultima-visita .product .description div.ship {}
-  
-  .main-home section.ultima-visita .product .description div.ship i.fa-circle {}
-  
-  .main-home section.ultima-visita .product .description div.ship i.fa-truck {}
+  .main-home section.ultima-visita .product .description i {
+    left: 14vw;
+  }
   
   .main-home section.ultima-visita .product .description .precio {}
   
-  .main-home section.ultima-visita .product .description .descuentos {}
+  .main-home section.ultima-visita .product .description .descuentos {
+    padding-left: 35px;
+  }
   
   .main-home section.ultima-visita .product .description h4 {}
   
@@ -263,17 +282,17 @@
   
   .main-home section.ofertas h2 {}
   
-  .main-home section.ofertas article.product {}
+  .main-home section.ofertas article.product {
+    width: 21.4%;
+  }
   
   .main-home section.ofertas .product img {}
   
   .main-home section.ofertas .product .description {}
   
-  .main-home section.ofertas .product .description .ship {}
-  
-  .main-home section.ofertas .product .description .ship i.fa-circle {}
-  
-  .main-home section.ofertas .product .description .ship i.fa-truck {}
+  .main-home section.ofertas .product .description i {
+    left: 14vw;
+  }
   
   .main-home section.ofertas .product div.description .precio {}
   

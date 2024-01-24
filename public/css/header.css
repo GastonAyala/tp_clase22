@@ -9,29 +9,47 @@
     padding: 25px;
 }
 
-.header-home img.logo {
-    width: 134px;
-    margin: 0 0 10px 0;
+.header-home div.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.header-home div {}
-
-.header-home div input {
-    width: 180px;
-    text-align: center;
+.header-home .top-bar .logo-container {
+    width: 50%;
+    max-width: 40vw;
 }
 
-.header-home button {}
-
-.header-home button i {
+.header-home .top-bar .logo-container img.logo {
+    width: 100%;
 }
 
-.header-home p.cuerpo-texto {
+.header-home div.top-bar div.text {
+    width: 50%;
+    max-width: 192px;
+}
+
+.header-home .top-bar .text form {}
+
+.header-home .top-bar .text form input {
+    width: 159px;
+}
+
+.header-home .top-bar .text form button {}
+
+.header-home .top-bar .text form button i {}
+
+.header-home div.top-bar p.cuerpo-texto {
     text-align: center;
     font-size: var(--cuerpoTexto);
 }
 
+.header-home div.top-bar p.cuerpo-texto i {}
+
 .header-home .nav-principal {
+    display: none;
 }
 
 .header-home .nav-principal ul.list-nav-principal {
@@ -40,25 +58,19 @@
     margin: 0;
 }
 
-.header-home .nav-principal .list-nav-principal li {
-    display: none;
-}
+.header-home .nav-principal .list-nav-principal li {}
 
 .header-home .nav-principal .list-nav-principal li a {}
 
-.header-home .secondary-nav  {}
-
-.header-home .secondary-nav ul.list-nav-login {
+.header-home .nav-principal ul.list-nav-login {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.header-home .secondary-nav .list-nav-login li {}
+.header-home .nav-principal .list-nav-login li {}
 
-.header-home .secondary-nav .list-nav-login li a {
-    display: none;
-}
+.header-home .nav-principal .list-nav-login li a {}
 
 .header-home div.burger-menu {
     text-align: center;
@@ -75,44 +87,60 @@
 
 @media (min-width: 361px) {
     .home-body {}
-    
+
     .header-home {}
     
-    .header-home img.logo {
-        width: 191px;
+    .header-home div.top-bar {}
+    
+    .header-home .top-bar .logo-container {
+        max-width: 32vw;
     }
+    
+    .header-home .top-bar .logo-container img.logo {}
+    
+    .header-home div.top-bar div.text {}
+    
+    .header-home .top-bar .text form {}
 
-    .header-home div {}
+    .header-home .top-bar .text form input {
+        width: 170px;
+    }
     
-    .header-home div input {}
+    .header-home .top-bar .text form button {}
     
-    .header-home button {}
+    .header-home .top-bar .text form button i {}
     
-    .header-home button i {}
+    .header-home div.top-bar p.cuerpo-texto {}
     
-    .header-home p.cuerpo-texto {}
+    .header-home div.top-bar p.cuerpo-texto i {}
     
     .header-home .nav-principal {
-        margin-top: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     
-    .header-home .nav-principal ul.list-nav-principal {}
+    .header-home .nav-principal ul.list-nav-principal {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
     .header-home .nav-principal .list-nav-principal li {
-        display: block; 
+        margin: 0 5px;
     }
     
     .header-home .nav-principal .list-nav-principal li a {}
     
-    .header-home .secondary-nav  {}
-    
-    .header-home .secondary-nav ul.list-nav-login {}
-    
-    .header-home .secondary-nav .list-nav-login li {}
-    
-    .header-home .secondary-nav .list-nav-login li a {
-        display: block;
+    .header-home .nav-principal ul.list-nav-login {
+        display: flex;
+        flex-wrap: wrap;
     }
+    
+    .header-home .nav-principal .list-nav-login li {
+        margin: 0 5px;
+    }
+    
+    .header-home .nav-principal .list-nav-login li a {}
     
     .header-home div.burger-menu {
         display: none;
@@ -126,20 +154,32 @@
 
 @media (min-width: 769px) {
     .home-body {}
-    
+
     .header-home {}
     
-    .header-home img.logo {}
+    .header-home div.top-bar {
+        justify-content: space-between;
+    }
+    
+    .header-home .top-bar .logo-container {
+        max-width: 33vw;
+    }
+    
+    .header-home .top-bar .logo-container img.logo {}
+    
+    .header-home div.top-bar div.text {}
 
-    .header-home div {}
+    .header-home .top-bar .text form {}
     
-    .header-home div input {}
+    .header-home .top-bar .text form input {}
     
-    .header-home button {}
+    .header-home .top-bar .text form button {}
     
-    .header-home button i {}
+    .header-home .top-bar .text form button i {}
     
-    .header-home p.cuerpo-texto {}
+    .header-home div.top-bar p.cuerpo-texto {}
+    
+    .header-home div.top-bar p.cuerpo-texto i {}
     
     .header-home .nav-principal {}
     
@@ -149,13 +189,11 @@
     
     .header-home .nav-principal .list-nav-principal li a {}
     
-    .header-home .secondary-nav  {}
+    .header-home .nav-principal ul.list-nav-login {}
     
-    .header-home .secondary-nav ul.list-nav-login {}
+    .header-home .nav-principal .list-nav-login li {}
     
-    .header-home .secondary-nav .list-nav-login li {}
-    
-    .header-home .secondary-nav .list-nav-login li a {}
+    .header-home .nav-principal .list-nav-login li a {}
     
     .header-home div.burger-menu {}
     
