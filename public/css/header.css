@@ -13,8 +13,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
 .header-home .top-bar .logo-container {
@@ -23,21 +24,21 @@
 }
 
 .header-home .top-bar .logo-container img.logo {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .header-home div.top-bar div.text {
-    width: 50%;
-    max-width: 192px;
+    width: 48%;
 }
 
-.header-home .top-bar .text form {}
-
-.header-home .top-bar .text form input {
-    width: 159px;
+.header-home .top-bar .text form {
+    display: flex;
 }
 
-.header-home .top-bar .text form button {}
+.header-home .top-bar .text form input {}
+
+.header-home .top-bar .text form button {
+}
 
 .header-home .top-bar .text form button i {}
 
@@ -98,12 +99,13 @@
     
     .header-home .top-bar .logo-container img.logo {}
     
-    .header-home div.top-bar div.text {}
+    .header-home div.top-bar div.text {
+    width: 29%;
+}
     
     .header-home .top-bar .text form {}
 
     .header-home .top-bar .text form input {
-        width: 170px;
     }
     
     .header-home .top-bar .text form button {}
@@ -167,7 +169,9 @@
     
     .header-home .top-bar .logo-container img.logo {}
     
-    .header-home div.top-bar div.text {}
+    .header-home div.top-bar div.text {
+    width: 29%;
+}
 
     .header-home .top-bar .text form {}
     

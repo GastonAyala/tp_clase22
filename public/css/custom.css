@@ -1,0 +1,9 @@
+.btn-custom-blue {
+    background-color:  var(--celeste);
+    color: var(--blanco);
+}
+
+.btn-custom-gray {
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+}

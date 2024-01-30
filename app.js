@@ -11,5 +11,7 @@ app.use(express.static('public'));
 
 
 newRoute("/", "home");
+newRoute("registro", "register");
+newRoute("iniciar", "login");
 
 app.listen(port, /*() => console.log(`http://localhost:${port}`)*/);
