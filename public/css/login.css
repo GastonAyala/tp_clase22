@@ -1,0 +1,12 @@
+.login {
+    height: 600px;
+}
+
+.login form .button-container button {
+
+}
+
+.login form .button-container button:hover {
+    background-color: var(--azul)!important;
+    color: var(--blanco)!important;
+}

@@ -34,6 +34,10 @@
   width: 100%;
 }
 
+.main-home section.ultima-visita article.product:hover  .description h4 {
+  opacity: 1;
+} 
+
 .main-home section.ultima-visita article.product img {
   width: 100%;
   display: block;
@@ -63,6 +67,11 @@
   position: absolute;
   left: 73vw;
   top: -17px;
+  transition: all 1s;
+}
+
+.main-home section.ultima-visita .product .description i:hover {
+  transform: rotate(-90deg);
 }
 
 .main-home section.ultima-visita .product .description .precio {
@@ -74,13 +83,16 @@
   color: var(--verde);
   font-size: var(--descuentos);
   width: 70%;
-  text-wrap: nowrap;
 }
 
 .main-home section.ultima-visita .product .description h4 {
   color: var(--grisOscuro);
+  text-align: center;
+  width: 100%;
   display: none;
-  margin-top: 15px;
+  margin: 0;
+  font-size: var(--descripciones);
+  opacity: 0;
 }
 
 /* ------ SECCIÓN OFERTAS --------- */
@@ -102,6 +114,10 @@
   margin: 15px 0;
   width: 100%;
 }
+
+.main-home section.ofertas article.product:hover  .description h4 {
+  opacity: 1;
+} 
 
 .main-home section.ofertas .product img {
   width: 100%;
@@ -132,6 +148,11 @@
   position: absolute;
   left: 71vw;
   top: -17px;
+  transition: all 1s;
+}
+
+.main-home section.ofertas .product .description i:hover {
+  transform: rotate(-90deg);
 }
 
 .main-home section.ofertas .product div.description .precio {
@@ -139,19 +160,28 @@
   width: 30%;
 }
 
+.main-home section.ofertas .product div.description .precio {}
+
 .main-home section.ofertas .product .description .descuentos {
   font-size: var(--descuentos);
   color: var(--verde);
   width: 70%;
-  text-wrap: nowrap;
 }
+
 
 .main-home section.ofertas .product .description h4 {
   color: var(--grisOscuro);
+  text-align: center;
+  width: 100%;
   display: none;
-  margin-top: 15px;
+  margin: 0;
+  font-size: var(--descripciones);
+  opacity: 0;
 }
 
+.main-home section.ofertas .product .description h4:hover {
+  opacity: 1;
+}
 /* ------ MEDIA QUERIES --------- */
 
 
@@ -176,14 +206,17 @@
     text-align: start;
     width: 92%;
   }
+
   .main-home section.ultima-visita article.product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 43.6%;
     margin: 6px 6px;
   }
+
+  .main-home section.ultima-visita article.product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
   
-  .main-home section.ultima-visita article.product img {
-}
+  .main-home section.ultima-visita article.product img {}
   
   .main-home section.ultima-visita article.product div.description {}
   
@@ -218,11 +251,14 @@
   }
   
   .main-home section.ofertas article.product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 43.6%;
     margin: 6px 6px;
   }
   
+  .main-home section.ofertas article.product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
   .main-home section.ofertas .product img {}
   
   .main-home section.ofertas .product .description {}

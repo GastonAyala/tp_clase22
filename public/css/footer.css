@@ -2,26 +2,89 @@
 /* ------ MOBILE-VIEW --------- */
 .home-body {}
 
-.footer-home {
-}
+.footer-home {}
 
-.footer-home section {
+.footer-home .card-credit {
     text-align: center;
     margin: 10px;
+    color: var(--grisOscuro);
+    width: auto;
 }
 
-.footer-home section i {
+.footer-home .card-credit i {
     font-size: 2em;
     margin-bottom: 10px;
     color: var(--celeste);
+    transition: all 0.2s;
+}
+.footer-home .card-credit i:hover {
+    color: var(--verde);
 }
 
-.footer-home section h3 {
+.footer-home .card-credit h3 {
     color: var(--grisOscuro);
     margin: 0px;
 }
 
-.footer-home section p {
+.footer-home .card-credit p {
+    color: var(--grisOscuro);
+    font-size: var(--descripciones);
+    margin: 0px;
+}
+
+.footer-home .free-ship {
+    text-align: center;
+    margin: 10px;
+    color: var(--grisOscuro);
+    width: auto;
+}
+
+.footer-home .free-ship i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+    transition: all 0.2s;
+}
+
+.footer-home .free-ship i:hover {
+    color: var(--verde);
+}
+
+.footer-home .free-ship h3 {
+    color: var(--grisOscuro);
+    margin: 0px;
+}
+
+.footer-home .free-ship p {
+    color: var(--grisOscuro);
+    font-size: var(--descripciones);
+    margin: 0px;
+}
+
+.footer-home .user-shield {
+    text-align: center;
+    width: auto;
+    color: var(--grisOscuro);
+}
+
+.footer-home .user-shield i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+    transition: all 0.2s;
+}
+
+.footer-home .user-shield i:hover {
+    color: var(--verde);
+
+}
+
+.footer-home .user-shield h3 {
+    color: var(--grisOscuro);
+    margin: 0px;
+}
+
+.footer-home .user-shield p {
     color: var(--grisOscuro);
     font-size: var(--descripciones);
     margin: 0px;
@@ -30,7 +93,6 @@
 /* ------ SECCIÓN COPYRIGHT --------- */
 
 .footer-home section.copyright {
-    text-align: justify;
     margin-left: 10px;
 }
 
@@ -41,17 +103,31 @@
 
 /* ------ TABLET-VIEW --------- */
 @media (min-width: 361px) {
-    .home-body {}
-
     .footer-home {}
+
+    .footer-home .card-credit {}
     
-    .footer-home section {}
+    .footer-home .card-credit i {}
     
-    .footer-home section i {}
+    .footer-home .card-credit h3 {}
     
-    .footer-home section h3 {}
+    .footer-home .card-credit p {}
     
-    .footer-home section p {}
+    .footer-home .free-ship {}
+    
+    .footer-home .free-ship i {}
+    
+    .footer-home .free-ship h3 {}
+    
+    .footer-home .free-ship p {}
+    
+    .footer-home .user-shield {}
+    
+    .footer-home .user-shield i {}
+    
+    .footer-home .user-shield h3 {}
+    
+    .footer-home .user-shield p {}
     
     /* ------ SECCIÓN COPYRIGHT --------- */
     
@@ -64,22 +140,49 @@
 /* ------ DESKTOP-VIEW --------- */
 
 @media (min-width: 769px) {
-    .home-body {}
+    .footer-home {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .footer-home {}
+    .footer-home .card-credit {margin: 0;width: 33.33%;padding-top: 20px;}
     
-    .footer-home section {}
+    .footer-home .card-credit i {}
     
-    .footer-home section i {}
+    .footer-home .card-credit h3 {}
     
-    .footer-home section h3 {}
+    .footer-home .card-credit p {}
     
-    .footer-home section p {}
+    .footer-home .free-ship {
+    margin: 0;
+    width: 33.33%;
+    padding-top: 20px;
+}
+    
+    .footer-home .free-ship i {}
+    
+    .footer-home .free-ship h3 {}
+    
+    .footer-home .free-ship p {}
+    
+    .footer-home .user-shield {
+    margin: 0;
+    width: 33.33%;
+    padding-top: 20px;
+}
+    
+    .footer-home .user-shield i {}
+    
+    .footer-home .user-shield h3 {}
+    
+    .footer-home .user-shield p {}
     
     /* ------ SECCIÓN COPYRIGHT --------- */
     
-    .footer-home section.copyright {}
+    .footer-home section.copyright {
+    width: 100%;
+}
     
     .footer-home section.copyright h3 {}
-
+    
 }
